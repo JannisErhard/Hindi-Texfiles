@@ -1,0 +1,365 @@
+\documentclass[12pt]{scrartcl}
+\usepackage{float}
+\usepackage{silence}
+\usepackage{hyperref}
+\WarningFilter{latex}{Command \InputIfFileExists}
+
+%%% For accessing system, OTF and TTF fonts
+%%% (would have been loaded by polyglossia anyway)
+\usepackage{fontspec}
+
+%%% For language switching -- like babel, but for xelatex
+\usepackage{polyglossia}
+
+%%% For the xelatex (and other LaTeX friends) logos
+%\usepackage{hologo}
+%%% For the awesome fontawesome icons!
+%\usepackage{fontawesome}
+%\usepackage[hyphens]{url}
+
+\setotherlanguages{hindi,sanskrit} %% or other languages
+
+\setmainlanguage{english}
+% Main serif font for English (Latin alphabet) text
+\setmainfont{Noto Serif}
+\setsansfont{Noto Sans}
+\setmonofont{Noto Mono}
+
+% define fonts for other languages
+\newfontfamily\devanagarifont[Script=Devanagari]{Noto Serif Devanagari}
+
+
+%%% CJK needs a different treatment
+\usepackage[space]{xeCJK}
+
+
+
+
+\title{My collective Knowledge of the Hindi language}
+\author{J. T. Erhard}
+\date{}
+
+\begin{document}
+
+
+\maketitle
+\clearpage
+\tableofcontents
+\clearpage 
+
+
+
+
+\section{Grammar}
+\subsection{Abnormalities which don't fit standard characterisation}
+
+\begin{enumerate}
+    \item \begin{hindi} अ \end{hindi} is not pronounced at the end of a word unless the word only has one syllable
+\end{enumerate}
+
+\subsection{Devangaari Alphabet}
+
+
+
+\subsubsection{Diacritics/ Maatraa form}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c}
+\begin{hindi} अ \end{hindi}   &  \\ \hline
+\begin{hindi} आ \end{hindi}   & \begin{hindi} ा \end{hindi} \\ \hline
+\begin{hindi} इ \end{hindi}   & \begin{hindi}  ि \end{hindi} \\ \hline
+\begin{hindi} ई \end{hindi}   & \begin{hindi} ी \end{hindi} \\ \hline
+\begin{hindi} उ \end{hindi}   & \begin{hindi} ु\end{hindi} \\ \hline
+\begin{hindi} ऊ \end{hindi}   & \begin{hindi} ू \end{hindi} \\ \hline
+\begin{hindi} ए \end{hindi}   & \begin{hindi} े\end{hindi} \\ \hline
+\begin{hindi} ऐ \end{hindi}   & \begin{hindi} ै \end{hindi} \\ \hline
+\begin{hindi} ओ \end{hindi}   & \begin{hindi} ो  \end{hindi} \\ \hline
+\begin{hindi} औ \end{hindi}   & \begin{hindi} ौ \end{hindi} \\
+
+
+    \end{tabular}
+    \caption{Matras}
+    \label{tab:my_label}
+\end{table}
+
+
+\subsection{Pluralization}
+
+In Hindi all nouns can be subdivided into masculine and feminine nouns. They each can be marked or unmarked. Marked means, ending in a vowel that indicates the gender and unmarked means ending in a consonant.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+       $\oplus$  & masculine & feminine \\ \hline
+        marked  &  \begin{hindi} लड़का \end{hindi}& \begin{hindi}  कुर्सी\end{hindi} \\ \hline 
+        unmarked  & \begin{hindi} घर \end{hindi}  & \begin{hindi} मेज़ \end{hindi} \\ 
+    \end{tabular}
+    \caption{Table of types of nouns, each type represented by one example. In which category the noun falls dictates how its plural is formed.}
+    \label{tab:plural}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+       $\oplus$  & masculine & feminine \\ \hline
+        marked  &  \begin{hindi} लड़के \end{hindi}& \begin{hindi} कुर्सियाँ\end{hindi} \\ \hline 
+        unmarked  & \begin{hindi} घर \end{hindi}  & \begin{hindi} मेज़ें \end{hindi} \\ 
+    \end{tabular}
+    \caption{Sister Table to \ref{tab:plural}, with all the plural forms. Only unmarked masculine nouns have no declension}
+    \label{tab:plural_sister}
+\end{table}
+
+
+
+\subsection{Second Person Pronouns}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+\begin{hindi}  आप हैं \end{hindi} & aap & formal, honorific \\
+\begin{hindi}  तुम हो \end{hindi} & thum & infromar, familiar \\
+\begin{hindi}  तु है \end{hindi} & tu & intimate \\         
+    \end{tabular}
+    \caption{All mean you in increasing degree of intimacy. aap and thum can be used  for one or more people, adjectives and verb forms with aap and thum always have to be pluralized. }
+    \label{tab:second_person_pronouns}
+\end{table}
+
+
+\subsection{Indirect verb constructions}
+Many hindi verbs are used in indirect constructions. When they appears, the subject of an English sentence becomes the object, followed by the postposition \begin{hindi} को  \end{hindi} followed by the object of the English sentence which in the  hindi sentence is the subject. 
+
+For example:
+\begin{hindi}
+    लड़की को केले पसंद हैं
+\end{hindi}
+will be translated to 
+"The girl likes bananas." 
+But the construction literally is:
+"The bananas are pleasing to the girl"
+
+\subsection{The singular oblique form}
+If a noun phrase (a noun and all of its modifiers) is followed by a postposition, all its constituents change into the oblique form. 
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c}
+direct form & oblique form \\ \hline 
+    \begin{hindi}  मैं  \end{hindi} & \begin{hindi}  मुझे \end{hindi}\\
+    \begin{hindi}  आप  \end{hindi} & \begin{hindi}  आप \end{hindi}\\
+    \begin{hindi}  वह  \end{hindi} & \begin{hindi}  उसे \end{hindi}\\
+    \begin{hindi}  हम  \end{hindi} & \begin{hindi}  हमें \end{hindi}\\
+    \begin{hindi}  आप  \end{hindi} & \begin{hindi}  आप \end{hindi}\\
+    \begin{hindi}  वे  \end{hindi} & \begin{hindi}  उन्हें \end{hindi}\\
+    \begin{hindi}  वो  \end{hindi} & \begin{hindi}  उन \end{hindi}\\
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+
+
+
+\subsection{Conjugation}
+\begin{table}[H]    \centering
+    \begin{tabular}{c|c|c}
+    \begin{hindi}मैं खाता हूँ  \end{hindi} & ich esse & khata hu \\   
+    \begin{hindi}तुम खाते हो \end{hindi} & du isst & khaTe ho \\   
+    \begin{hindi}वह खाता है \end{hindi} & er isst & khaTa hai \\   
+    \begin{hindi}हम  खाते हैं \end{hindi} & wir essen & khaTe hain \\   
+    \begin{hindi} तुम खाते हो \end{hindi} & ihr esst & khaTe ho \\   
+    \begin{hindi} खाते हैं \end{hindi} & sie essen & khaTe hain \\   
+    \end{tabular}
+    \caption{present tense, informal, male. Conjugation in Hindi is a 2 step process. First you pick one of 2 verb forms and then you add the auxiliary verb, which is a from of to be, to finish up your construct. }    
+    \label{tab:my_label}
+\end{table}
+
+
+
+
+\begin{table}[H]    \centering
+    \begin{tabular}{c|c|c}
+    \begin{hindi} हूँ \end{hindi} & (I) am & hu \\   
+    \begin{hindi} हैं \end{hindi} & (You) are & hähn \\   
+    \begin{hindi} है \end{hindi} & (He) is & häh \\   
+    \begin{hindi} हैं \end{hindi} & (We) are & häh \\   
+    \begin{hindi} हो \end{hindi} & (They) are & ho \\   
+    \end{tabular}
+    \caption{This needs to be revised, this is not how it works. I am unsure how it actually works but I don't have clear guideline either} \label{tab:my_label}
+\end{table}
+
+
+
+\newpage 
+\section{Vocabulary}
+\input{vocabulary}
+
+\section{Stories}
+\subsection{Example of a possible story by Jannis}
+
+
+
+\begin{hindi}
+जूलिया के बेटा का नाम राज है।
+राज को सब्जियाँ चाहिए।
+उसे गाजर, आलू, टमाटर और चावल चाहिए।
+राज नेहा के घर जाता है।
+नेहा के घर में सब्जियां हैं।
+राज और नेहा सब्जियाँ लेकर राज की माँ के घर जाते हैं।
+राज बहुत खुश आदमी है.
+\end{hindi}
+
+\subsection{Story for Jannis billa}
+\subsubsection{The Treasure of Joyful Play in the Village of Nainital}
+
+
+\begin{hindi}
+एक बार की बात है, नैनीताल नामक गांव में, एक दादा-दादी रहते थे। उनके पास दो पोते थे। एक का नाम निक्की था और दूसरे का नाम बॉबी था। बॉबी हमेशा एक शर्मीले बच्चे की तरह थी और निक्की एक प्यारी चिड़िया की तरह थी, वह उड़ना चाहती है. दोनों बच्चे अपने मासूम बचपन का आनंद \end{hindi}
+
+A ?'s ? is/does, nanital ? village inside, a grandparents live their ? two ?. Ones name niki ?, and ?'s name babi ? . babi has a ? children's ? ? and nikki a ? ?'s ? ?, that their ? ? is. ? children ? ? ? ... . 
+
+% this is real story btw. 
+% you can read this and understand some words which you have not learned so far. Once you understand this story well, you can try to make your own using similar verbs, nouns. Do you want another story from my village nanital ? 
+\end{document}
+
+\section{Singular \& Plural Words in Hindi}
+Ekvachan means Singular \& Bahuvachan Means Plural.
+\begin{hindi}
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+एकवचन & बहुवचन \\
+\hline
+आदमी & आदमियों \\
+कुत्ता & कुत्ते \\
+बिल्ली & बिल्लियाँ \\
+पेड़ & पेड़े \\
+किताब & किताबें \\
+गाना & गाने \\
+बच्चा & बच्चे \\
+घर & घरें \\
+मुर्गा & मुर्गे \\
+स्कूल & स्कूल \\
+कमरा & कमरे \\
+\hline
+\end{tabular}
+\caption{}
+\end{table}
+\end{hindi}
+\clearpage
+
+
+ \begin{hindi} ले रहे थे. \\
+पार्क का दृश्य (Scene):
+नाना : बिल्कुल बेटा, अब हम सब खेलेंगे। निक्की, बॉबी, आओ यहाँ!
+निक्की : हाँ, नाना!
+बॉबी : जी, नाना!
+नानी : देखो, बच्चों, यह फुटबॉल है।
+निक्की: वाह, कितना अच्छा लग रहा है!
+बॉबी: हाँ, नाना, यह फुटबॉल बहुत प्यारा है।
+नाना: अच्छा, अब देखते हैं कौन गोल बनाता है।
+निक्की गोल बनाती है
+नानी: बहुत अच्छा, निक्की! तुम तो बहुत ही अच्छा खिलाड़ी हो।
+नाना: अब एक छोटी सी चाय पीते हैं। सब बैठो।
+बैठते हैं और चाय पीते हैं
+निक्की: नाना-नानी, यह चाय बहुत स्वादिष्ट है।
+बॉबी: हाँ, नानी, आप बहुत अच्छा बनाती हैं।
+नानी: धन्यवाद, बच्चों। अब मैं तुम्हें एक कहानी सुनाती हूँ।
+नानी: और यह था हमारा खूबसूरत गांव, नैनीताल।
+निक्की: वाह, नानी, यह गांव सचमुच बहुत खूबसूरत है।
+बॉबी: हाँ, नानी, हम यहाँ बहुत अच्छा समय बिता रहे हैं।
+नाना: हाँ, बच्चों, हम सबको यहाँ खेलते हुए बहुत मजा आ रहा है।
+नानी: अब तुम्हें थोड़ी सी नींद आ रही होगी। चलो, गोदी में सुलाते हैं।
+नानी ने उन्हें सुलाया
+नानी: और यह एक छोटी सी कहानी है जिसे तुम्हारे कानों में सुनाते हैं।
+कुछ समय बाद, निक्की और बॉबी सो जाते हैं
+नानी: सो जाओ, बच्चों, खूबसूरत सपने आएं।
+\end{hindi}
+
+% Words you know from this text
+हाँ, nana, nani (same as dada and dadi), यह ,और,मैं, तुम्हें, एक,अब, हम, सब, खेलेंगे, जाते,छोटी ,में,नैनीताल (My city from UK),चाय, बहुत,यहाँ, एक,था,हमारा,धन्यवाद ,कौन, चिड़िया,वह ,दोनों ,बच्चे ,अपने
+
+% No, I dont know these words:
+अब, सब, खेलेंगे, जाते, यहाँ, चिड़िया,दोनों,  
+you know do ? right ek and do. dono is  just  
+bird ? you once told me about birds 
+bird is pepshi, check the list, nouns, animals
+heheehe okay sorry 
+birds are also called chidya. 
+i think before i learn alternative words for bird it makes more sense tzo löearn how ti use the words i know 
+thank you for your effort, i think you just assumed you have a a good idea of what i know and dont know  but thats just not so 
+
+listen billa. It was my mistake. but you told me that you can also pick up on new words from my story and learn t
+hem. 
+but not if itrs more than half of the words
+just impossible to guess
+Okay, I understand . Tell me one thing 
+This all you know ? to guess 
+
+you mean "is this all you know from my text" ?
+because i know the around 90 words i listed on top 
+
+
+
+हाँ, nana, nani (same as dada and dadi), यह ,और,मैं, तुम्हें, एक,अब, हम, सब, खेलेंगे, जाते,छोटी ,में,नैनीताल (My city from UK),चाय, बहुत,यहाँ, एक,था,हमारा,धन्यवाद ,कौन, चिड़िया,वह ,दोनों ,बच्चे ,अपने
+
+
+i did. wait i can explain 
+
+Do you understand this ????
+%Tell me if you understand this text
+This
+अचानक (suddenly) दोनों (Two childrens) चिल्लाने (Shouts) लगे. दादा जी ने दोनों बच्चों से कहा. क्या हुआ बेटा राज? (Do you understand this question by dada ji???) सब कुछ हुआ? राज ने कहा...दादा जी मैंने एक बहुत बड़ा जानवर देखा। वहां हमारी कुर्सी गुजरी. दादा जी एक बार फिर उनके पास आये... जानवर का रंग क्या था? थोड़ी देर बाद प्रिया बोली...दादा ने उसका रंग बदल दिया है। दादी ने कहा...क्या तुमने कुत्ता देखा? प्रिया ने कहा..नहीं, नहीं, वह एक जंगली चूहा था।
+
+okay now you translated the firstsentence for some reason, should i show ou what the second sentence is for me ?
+
+Yes. 
+
+okay:
+दादा जी ने दोनों बच्चों से कहा. क्या हुआ बेटा राज? 
+Where is se (from) in your pdf ? 
+How do I know that you know se is from ? Btw in this contect se means 
+Grandfather said to both the childrens , what happened  son Raj. Actually it has to be like ...
+Grandfather asked raj or something. But you almost got it.
+I mean what I can really do for you is to make sentences with your current knowldege of hinid. I cannot create a story with this knowledge. I am just confused how much you have learned. For example :   वह एक जंगली चूहा था।
+Write what you understand from thiss here:
+In my opnion you shouold know this.  Because you know what is wha, ek, jungali (Wild), and chuha 
+but i dont 
+it starts with
+था
+what the helöl is that,m i never saw this before
+then
+जंगली
+another piece of vacabular tha i dont know 
+yes great past tense of ha now i knjow 
+but that wasnt the pioint 
+of the exercise 
+at all
+
+
+
+I understand your point. I should have just write ha instead of tha. 
+# 
+
+
+sitions 
+what the fuck are you dopuing ?
+kissing you.  
+u start ay tha is past tense of ha. Its like some event you saw or happened back in time. 
+Hehehe kiss me back. you paste. So now you and me are represented by this cursor. When i touch yiurs we kiss. 
+vete how Okay. Thanks. thanks for ? for kiss. u wanted to write oh god. I dont know what to eat  today but i have to act on this problem soon
+
+I will make today my grandmother reciepe of yellow curry. remeber what felix eat last time ? kadhi pakora. I will make this. You know hungry has covid symptoms.  I will buy a test for him now.
+Granfather * * *  children from . What son Raj
+
+Should I send you easy indian vegetable reciepe like the one yiu made yesterday. You can basically use same ingredients. Just a different vegetable this time. 
+okay 
+Can you also buy this time a good ready to cook chapati ? from REWE or lidle. and then you can basically eat this stuff with that. The mexican roll was kind of not that good. 
+sure maybe 
+i mean i can if they have it but why would they have it 
+
+One has to see. Yeah, let me check. 
+I couldnt find relevant product. However, you can check REWE for something like this: 
+Sabita Discover India Chapati.  Something like this. 
+
+now i made a list of postpositions, i think i know only 3 se,me and par. from in and on
+okay
