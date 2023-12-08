@@ -1,10 +1,10 @@
 # Motivation
-Overleaf has decided it wouuld be super fun to massively reduce compile time effectively making it useles. From now on I will use github in combination
+Overleaf has decided it would be super fun to massively reduce compile time, effectively making it useless. From now on I will use GitHub in combination.
 
 # Prerequisites
 ```
 sudo apt install texlive-full
-sudo apt install texlive-full
+sudo apt-get install texlive-xetex
 ```
 # Compilation
 ```
