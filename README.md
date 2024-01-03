@@ -1,5 +1,5 @@
 # Motivation
-Overleaf has decided it would be super fun to massively reduce compile time, effectively making it useless. From now on I will use GitHub in combination with texlife from bash to dosument my knowledge acquisition.
+Overleaf has decided it would be super fun to massively reduce compile time, effectively making it useless. From now on I will use GitHub in combination with texlife from bash to document my knowledge acquisition.
 
 # Prerequisites
 ```
