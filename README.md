@@ -11,3 +11,6 @@ sudo apt-get install texlive-xetex
 NAME=`echo "$1" | cut -d'.' -f1`
 xelatex  -file-line-error -halt-on-error $NAME.tex && xdg-open $NAME.pdf
 ```
+
+# sources
+[diacritics](https://nepalgo.de/script/diacritics/)
